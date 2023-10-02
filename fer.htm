@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    
+    
+   
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #login-container {
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+
+        button {
+            background-color: #f39c12;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #footer {
+            background-color: #f39c12;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div id="login-container">
+    <h2>Login</h2>
+    <form onsubmit="validarCredenciais(); return false;">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Entrar</button><br>
+        <a href="index.html" style="color: aliceblue">Esqueceu a senha ?</a><br>
+        <a href="registrar.html" style="color: aliceblue">Criar Conta</a>
+    </form>
+</div>
+
+<script>
+    function validarCredenciais() {
+        var senha = document.getElementById('password').value;
+
+        if (senha === '12345') {
+            alert('Login bem-sucedido!');
+            // Redirecionar para index.html
+            window.location.href = 'index.html';
+        } else {
+            alert('Credenciais incorretas. Tente novamente.');
+        }
+    }
+</script>
+    
+    
+    
+<p> </p>
+<p> </p>  
+    <p> </p>
+<p> </p>  
+
+    <div id="footer">
+        <p style="font-family:verdana;color: black">Em meio ao cenário turístico pulsante de Angola, a gestão eficiente de reservas hoteleiras desempenha um papel crucial na oferta de experiências memoráveis aos visitantes. A convergência da hospitalidade com a tecnologia tem proporcionado o surgimento de avançados sistemas de controle de reservas, desenvolvidos para atender às crescentes demandas do setor.</p>
+        <center>
+            <p style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);font-family:verdana;color: black;" >Copyright ©</p>
+             <p style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);font-family:verdana;color: black;">2023</p>            
+            
+            </center>
+        
+    </div>
+</body>
+</html>

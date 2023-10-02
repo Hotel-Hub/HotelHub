@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HotelHub</title>
+</head>
+<body>
+   <div class="nav">
+       <div class="logo"><img src="assets/logo.jpg" alt=""></div>
+       <div class="menu">
+           <a href="index.html">Pagina Inicial</a>
+           <a href="Tours.html">Tours</a>
+           <a href="RentAcar.html">Contactos</a>
+           <a href="fer.htm">Log-Out</a>
+       </div>
+   </div>
+   <div class="container">
+     
+   <div class="card"><!--Card1-->
+     <div class="imagem">
+       <img src="assets/hotel1.jpg" alt="">
+     </div>
+      <div class="texto">
+       <h2>Hotel Trópico</h2>
+          <span>
+       <img src="assets/moeda.png" class="coin">
+       <p><b>62.000kz</b>/noite</p>
+       </span>
+     </div>
+        
+     <div class="botao">
+       <button onclick="reservarHotel('Hotel Alvalade')">Visitar</button>
+     </div>
+    </div>
+        <div class="card"><!--Card3-->
+     <div class="imagem">
+       <img src="assets/hotel3.jpg" alt="">
+     </div>
+     <div class="texto">
+       <h2>Hotel de Talatona</h2>
+       <span>
+       <img src="assets/moeda.png" class="coin">
+       <p><b>27.900kz</b>/noite</p>
+       </span>
+      
+     </div>
+     <div class="botao">
+       <button onclick="reservarHotel('Hotel de Talatona')">Visitar</button>
+     </div>
+   </div>
+      <div class="card"><!--Card4-->
+     <div class="imagem">
+       <img src="assets/hotel4.jpg" alt="">
+     </div>
+     <div class="texto">
+       <h2>Hotel Epic Sana</h2>
+       <span>
+       <img src="assets/moeda.png" class="coin">
+       <p><b>30.700kz</b>/noite</p>
+       </span>
+     </div>
+     <div class="botao">
+       <button onclick="reservarHotel('Hotel Epic Sana')">Visitar</button>
+     </div>
+         
+   </div>
+        
+     </div>
+    <script>
+        function reservarHotel(nomeHotel) {
+            alert(`Parabéns! Você reservou o ${nomeHotel}. Agora, aguarde o contato para a confirmação da reserva.`);
+        }
+    </script>
+ 
+       
+       
+       
+     <div class="footer">
+       <div class="about">
+         <h1>Sobre Nós</h1>
+       </div>
+       <div class="content" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)">
+            <p>No epicentro da revolução digital, surge a Computech, uma empresa comprometida com a excelência em programação web, desktop e aplicativos Android. Guiada por uma paixão inabalável pela inovação, a Computech rapidamente se estabeleceu como uma força motriz no cenário tecnológico, esculpindo um caminho distinto na paisagem da programação.</p>
+       </div>
+          
+       <div class="socials">
+           <a href="m.youtube.com" target="_blank" class="icon-link">
+         <img src="assets/facebook.png" alt="" class="icon" >
+               </a>
+         <img src="assets/instagram.png" alt="" class="icon">
+         <img src="assets/twitter.png" alt="" class="icon">
+       </div>
+     </div>
+</body>
+</html>

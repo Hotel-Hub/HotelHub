@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tours para Turistas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .tour-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .tour-card {
+            width: 300px;
+            margin: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .tour-card:hover {
+            transform: scale(1.05);
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .tour-card h2, .tour-card p {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .tour-card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" onclick="goBack()" style="color: aliceblue; font-family: verdana;">Voltar</a>
+    <header>
+        <div class="container">
+            <h1>Descubra Novos Destinos</h1>
+            <p>Escolha um dos nossos incríveis tours</p>
+        </div>
+    </header>
+
+    <div class="container tour-container">
+        <div class="tour-card" onclick="openTour('Tour Histórico')">
+            <img src="cidade.jpg" alt="Tour Histórico">
+            <div class="card-content">
+                <h2>Tour Histórico</h2>
+                <p>Explore locais históricos fascinantes com nosso guia especializado.</p>
+                <button>Reservar Agora</button>
+            </div>
+        </div>
+
+        <div class="tour-card" onclick="openTour('Aventura na Natureza')">
+            <img src="natureza.jpg" alt="Aventura na Natureza">
+            <div class="card-content">
+                <h2>Aventura na Natureza</h2>
+                <p>Descubra a beleza natural em uma emocionante aventura ao ar livre.</p>
+                <button>Reservar Agora</button>
+            </div>
+        </div>
+
+        <div class="tour-card" onclick="openTour('Gastronomia Local')">
+            <img src="comida.jpg" alt="Gastronomia Local">
+            <div class="card-content">
+                <h2>Gastronomia Local</h2>
+                <p>Experimente deliciosas iguarias locais em nosso tour gastronômico.</p>
+                <button>Reservar Agora</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tours para Turistas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTour(tourName) {
+            alert("Bem-vindo ao " + tourName + "!");
+            // Adicione lógica adicional conforme necessário
+        }
+    </script>
+</body>
+</html>
